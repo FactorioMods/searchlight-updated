@@ -1,9 +1,15 @@
 {
-	"name": "Searchlight",
-	"version": "1.1.2",
-	"title": "Searchlight",
-	"author": "HunterGerhart",
-	"factorio_version": "1.1",
-	"dependencies": ["base >= 1.1"],
-	"description": "Build long ranged lights that track enemies from a distance! Searchlights are non-damaging, electric-powered turrets requiring Optics technology."
+  "name": "searchlight-updated",
+  "version": "1.1.3",
+  "title": "Searchlight: Updated",
+  "author": "HunterGerhart; johnmart19 / FactorioMods (Factorio 2.1 compatibility)",
+  "factorio_version": "2.1",
+  "dependencies": [
+    "base >= 2.1.24",
+    "! Searchlight"
+  ],
+  "description": "Factorio 2.1 compatibility port with native legacy save ownership migration. Build long ranged lights that track enemies from a distance! Searchlights are non-damaging, electric-powered turrets requiring Optics technology.",
+  "migrates_from": [
+    "Searchlight"
+  ]
 }

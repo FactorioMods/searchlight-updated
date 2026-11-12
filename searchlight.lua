@@ -6,7 +6,7 @@ local sounds = require("__base__.prototypes.entity.sounds")
 function search_light_extension(inputs)
   return
   {
-    filename = "__Searchlight__/graphics/hnt-search-raising.png",
+    filename = "__searchlight-updated__/graphics/hnt-search-raising.png",
     priority = "medium",
     width = 250,
     height = 200,
@@ -19,7 +19,7 @@ function search_light_extension(inputs)
     scale = 0.5,
     hr_version =
     {
-      filename = "__Searchlight__/graphics/hnt-search-raising.png",
+      filename = "__searchlight-updated__/graphics/hnt-search-raising.png",
       priority = "medium",
       width = 250,
       height = 200,
@@ -37,7 +37,7 @@ end
 function search_light_extension_shadow(inputs)
   return
   {
-    filename = "__Searchlight__/graphics/hnt-search-raising-shadow.png",
+    filename = "__searchlight-updated__/graphics/hnt-search-raising-shadow.png",
     width = 250,
     height = 200,
     frame_count = inputs.frame_count or 8,
@@ -50,7 +50,7 @@ function search_light_extension_shadow(inputs)
     scale = 0.5,
     hr_version =
     {
-      filename = "__Searchlight__/graphics/hnt-search-raising-shadow.png",
+      filename = "__searchlight-updated__/graphics/hnt-search-raising-shadow.png",
       width = 250,
       height = 200,
       frame_count = inputs.frame_count or 8,
@@ -68,7 +68,7 @@ end
 function search_light_extension_mask(inputs)
   return
   {
-    filename = "__Searchlight__/graphics/hnt-search-raising-mask.png",
+    filename = "__searchlight-updated__/graphics/hnt-search-raising-mask.png",
     flags = { "mask" },
     width = 250,
     height = 200,
@@ -82,7 +82,7 @@ function search_light_extension_mask(inputs)
     scale = 0.5,
     hr_version =
     {
-      filename = "__Searchlight__/graphics/hnt-search-raising-mask.png",
+      filename = "__searchlight-updated__/graphics/hnt-search-raising-mask.png",
       flags = { "mask" },
       width = 250,
       height = 200,
@@ -101,7 +101,7 @@ end
 function search_light_shooting()
   return
   {
-    filename = "__Searchlight__/graphics/hnt-search-shooting.png",
+    filename = "__searchlight-updated__/graphics/hnt-search-shooting.png",
     line_length = 8,
     width = 250,
     height = 200,
@@ -111,7 +111,7 @@ function search_light_shooting()
     scale = 0.5,
     hr_version =
     {
-      filename = "__Searchlight__/graphics/hnt-search-shooting.png",
+      filename = "__searchlight-updated__/graphics/hnt-search-shooting.png",
       line_length = 8,
       width = 250,
       height = 200,
@@ -126,7 +126,7 @@ end
 function search_light_shooting_glow()
   return
   {
-    filename = "__Searchlight__/graphics/hnt-search-shooting-light.png",
+    filename = "__searchlight-updated__/graphics/hnt-search-shooting-light.png",
     line_length = 8,
     width = 250,
     height = 200,
@@ -137,7 +137,7 @@ function search_light_shooting_glow()
     scale = 0.5,
     hr_version =
     {
-      filename = "__Searchlight__/graphics/hnt-search-shooting-light.png",
+      filename = "__searchlight-updated__/graphics/hnt-search-shooting-light.png",
       line_length = 8,
       width = 250,
       height = 200,
@@ -153,7 +153,7 @@ end
 function search_light_shooting_mask()
   return
   {
-    filename = "__Searchlight__/graphics/hnt-search-shooting-mask.png",
+    filename = "__searchlight-updated__/graphics/hnt-search-shooting-mask.png",
     flags = { "mask" },
     line_length = 8,
     width = 250,
@@ -165,7 +165,7 @@ function search_light_shooting_mask()
     scale = 0.5,
     hr_version =
     {
-      filename = "__Searchlight__/graphics/hnt-search-shooting-mask.png",
+      filename = "__searchlight-updated__/graphics/hnt-search-shooting-mask.png",
       flags = { "mask" },
       line_length = 8,
       width = 250,
@@ -182,7 +182,7 @@ end
 function search_light_shooting_shadow()
   return
   {
-    filename = "__Searchlight__/graphics/hnt-search-shooting-shadow.png",
+    filename = "__searchlight-updated__/graphics/hnt-search-shooting-shadow.png",
     line_length = 8,
     width = 250,
     height = 200,
@@ -193,7 +193,7 @@ function search_light_shooting_shadow()
     scale = 0.5,
     hr_version =
     {
-      filename = "__Searchlight__/graphics/hnt-search-shooting-shadow.png",
+      filename = "__searchlight-updated__/graphics/hnt-search-shooting-shadow.png",
       line_length = 8,
       width = 250,
       height = 200,
@@ -210,7 +210,7 @@ end
 local lampsound = {}
 lampsound.mutebeam = {
 	{
-		filename = "__Searchlight__/sound/hnt-lamp-working.ogg", 
+		filename = "__searchlight-updated__/sound/hnt-lamp-working.ogg", 
 		volume = 0
 	}
 }
@@ -240,13 +240,13 @@ data:extend({{type = "ammo-category", name = "hnt-bulb"},
 		flags = {"not-on-map"},
 		duration_in_ticks = 60,
 		spread_fire_entity = "hnt-fake-fire",
-		icon = "__Searchlight__/graphics/hnt-search-icon.png",
+		icon = "__searchlight-updated__/graphics/hnt-search-icon.png",
     	icon_size = 64, icon_mipmaps = 4,
 	},
 {--PROTOTYPE search-light
     type = "electric-turret",
     name = "hnt-search-light",
-    icon = "__Searchlight__/graphics/hnt-search-icon.png",
+    icon = "__searchlight-updated__/graphics/hnt-search-icon.png",
     icon_size = 64, icon_mipmaps = 4,
     flags = { "placeable-player", "placeable-enemy", "player-creation", "building-direction-8-way"},
     minable = { mining_time = 0.4, result = "hnt-search-light" },
@@ -317,7 +317,7 @@ data:extend({{type = "ammo-category", name = "hnt-bulb"},
       layers =
       {
         {
-          filename = "__Searchlight__/graphics/hnt-search-base.png",
+          filename = "__searchlight-updated__/graphics/hnt-search-base.png",
           priority = "high",
           width = 250,
           height = 200,
@@ -327,7 +327,7 @@ data:extend({{type = "ammo-category", name = "hnt-bulb"},
           scale = 0.5,
           hr_version =
           {
-            filename = "__Searchlight__/graphics/hnt-search-base.png",
+            filename = "__searchlight-updated__/graphics/hnt-search-base.png",
             priority = "high",
             width = 250,
             height = 200,
@@ -338,7 +338,7 @@ data:extend({{type = "ammo-category", name = "hnt-bulb"},
           }
         },
         {
-          filename = "__Searchlight__/graphics/hnt-search-base-shadow.png",
+          filename = "__searchlight-updated__/graphics/hnt-search-base-shadow.png",
           line_length = 1,
           width = 250,
           height = 200,
@@ -349,7 +349,7 @@ data:extend({{type = "ammo-category", name = "hnt-bulb"},
           scale = 0.5,
           hr_version =
           {
-            filename = "__Searchlight__/graphics/hnt-search-base-shadow.png",
+            filename = "__searchlight-updated__/graphics/hnt-search-base-shadow.png",
             line_length = 1,
             width = 250,
             height = 200,
@@ -366,6 +366,7 @@ data:extend({{type = "ammo-category", name = "hnt-bulb"},
 
     attack_parameters =
     {
+      ammo_category = "laser",
       type = "beam",
       cooldown = 60,
       range = 90,
@@ -380,7 +381,7 @@ data:extend({{type = "ammo-category", name = "hnt-bulb"},
       	middle_sound = 
       	{
       		{
-      			filename = "__Searchlight__/sound/hnt-lamp-working.ogg", 
+      			filename = "__searchlight-updated__/sound/hnt-lamp-working.ogg", 
 				    volume = 0.7
       		}
       	}
@@ -431,6 +432,11 @@ data:extend({{type = "ammo-category", name = "hnt-bulb"},
 --PROTOTYPE search-beam
 local searchbeam = table.deepcopy(data.raw["beam"]["laser-beam"])
 
+searchbeam.head=table.deepcopy(searchbeam.graphics_set.beam.head.layers[1])
+searchbeam.tail=table.deepcopy(searchbeam.graphics_set.beam.tail.layers[1])
+searchbeam.body={table.deepcopy(searchbeam.graphics_set.beam.body[1].layers[1])}
+searchbeam.ground_light_animations=searchbeam.graphics_set.ground
+searchbeam.light_animations={head=table.deepcopy(searchbeam.head),tail=table.deepcopy(searchbeam.tail),body={table.deepcopy(searchbeam.body[1])}}
 searchbeam.name = "hnt-search-beam"
 searchbeam.action.action_delivery.target_effects = {type = "create-sticker", sticker = "hnt-lit-sticker", show_in_tooltip = false}
 searchbeam.working_sound = lampsound.mutebeam
@@ -438,70 +444,73 @@ searchbeam.head =
 {
   layers = 
   {
-    searchbeam.head,
+    table.deepcopy(searchbeam.head),
     searchbeam.head
   }
 }
-searchbeam.head.layers[1].filename = "__Searchlight__/graphics/hnt-search-head-color.png"
+searchbeam.head.layers[1].filename = "__searchlight-updated__/graphics/hnt-search-head-color.png"
 searchbeam.head.layers[1].tint = {r=1,g=1,b=1}
 searchbeam.head.layers[1].height = 150
 searchbeam.head.layers[1].line_length = 64
-searchbeam.head.layers[2].filename = "__Searchlight__/graphics/hnt-search-head-light.png"
+searchbeam.head.layers[2].filename = "__searchlight-updated__/graphics/hnt-search-head-light.png"
 searchbeam.head.layers[2].height = 150
 searchbeam.head.layers[2].line_length = 64
 
-searchbeam.head.layers[1].flags = {beam_non_light_flags, "no-crop"}
-searchbeam.head.layers[2].flags = {beam_non_light_flags, "no-crop"}
+searchbeam.head.layers[1].flags = {"trilinear-filtering", "no-crop"}
+searchbeam.head.layers[2].flags = {"trilinear-filtering", "no-crop"}
 
 searchbeam.tail =
 {
   layers = 
   {
-    searchbeam.tail,
+    table.deepcopy(searchbeam.tail),
     searchbeam.tail     
   }
 }
-searchbeam.tail.layers[1].filename = "__Searchlight__/graphics/hnt-search-end-color.png"
+searchbeam.tail.layers[1].filename = "__searchlight-updated__/graphics/hnt-search-end-color.png"
 searchbeam.tail.layers[1].tint = {r=1,g=1,b=1}
 searchbeam.tail.layers[1].height = 150
 searchbeam.tail.layers[1].line_length = 110
-searchbeam.tail.layers[2].filename = "__Searchlight__/graphics/hnt-search-end-light.png"
+searchbeam.tail.layers[2].filename = "__searchlight-updated__/graphics/hnt-search-end-light.png"
 searchbeam.tail.layers[2].height = 150
 searchbeam.tail.layers[2].line_length = 110
 
-searchbeam.tail.layers[1].flags = {beam_non_light_flags, "no-crop"}
-searchbeam.tail.layers[2].flags = {beam_non_light_flags, "no-crop"}
+searchbeam.tail.layers[1].flags = {"trilinear-filtering", "no-crop"}
+searchbeam.tail.layers[2].flags = {"trilinear-filtering", "no-crop"}
 
 searchbeam.body =
 {
   layers = 
   {
-    searchbeam.body[1],
+    table.deepcopy(searchbeam.body[1]),
     searchbeam.body[1]      
   }
 }
-searchbeam.body.layers[1].filename = "__Searchlight__/graphics/hnt-search-body-color.png"
+searchbeam.body.layers[1].filename = "__searchlight-updated__/graphics/hnt-search-body-color.png"
 searchbeam.body.layers[1].tint = {r=1,g=1,b=1}
 searchbeam.body.layers[1].height = 150
 searchbeam.body.layers[1].line_length = 64
-searchbeam.body.layers[2].filename = "__Searchlight__/graphics/hnt-search-body-light.png"
+searchbeam.body.layers[2].filename = "__searchlight-updated__/graphics/hnt-search-body-light.png"
 searchbeam.body.layers[2].height = 150
 searchbeam.body.layers[2].line_length = 64
 
-searchbeam.body.layers[1].flags = {beam_non_light_flags, "no-crop"}
-searchbeam.body.layers[2].flags = {beam_non_light_flags, "no-crop"}
+searchbeam.body.layers[1].flags = {"trilinear-filtering", "no-crop"}
+searchbeam.body.layers[2].flags = {"trilinear-filtering", "no-crop"}
 
 searchbeam.ground_light_animations.head.tint = {r=1,g=1,b=1,a=0.2}
 searchbeam.ground_light_animations.tail.tint = {r=1,g=1,b=1,a=0.2}
 searchbeam.ground_light_animations.body.tint = {r=1,g=1,b=1,a=0.2}
 
-searchbeam.light_animations.head.filename = "__Searchlight__/graphics/hnt-search-head-light.png"
-searchbeam.light_animations.body[1].filename = "__Searchlight__/graphics/hnt-search-body-light.png"
-searchbeam.light_animations.tail.filename = "__Searchlight__/graphics/hnt-search-end-light.png"
+searchbeam.light_animations.head.filename = "__searchlight-updated__/graphics/hnt-search-head-light.png"
+searchbeam.light_animations.body[1].filename = "__searchlight-updated__/graphics/hnt-search-body-light.png"
+searchbeam.light_animations.tail.filename = "__searchlight-updated__/graphics/hnt-search-end-light.png"
 searchbeam.light_animations.head.height = 150
 searchbeam.light_animations.body[1].height = 150
 searchbeam.light_animations.tail.height = 150
 
+searchbeam.graphics_set.beam.head=searchbeam.head
+searchbeam.graphics_set.beam.tail=searchbeam.tail
+searchbeam.graphics_set.beam.body={searchbeam.body}
 --recipe
 local recipe = table.deepcopy(data.raw["recipe"]["small-lamp"])
 recipe.enabled = false
@@ -514,7 +523,7 @@ data:extend{recipe, searchbeam,
 	{ --inventory
     type = "item",
     name = "hnt-search-light",
-    icon = "__Searchlight__/graphics/hnt-search-icon.png",
+    icon = "__searchlight-updated__/graphics/hnt-search-icon.png",
     icon_size = 64, icon_mipmaps = 4,
     subgroup = "circuit-network",
     order = "b[light]-b[hnt-search-light]",

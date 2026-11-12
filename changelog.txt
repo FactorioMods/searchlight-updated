@@ -1,0 +1,6 @@
+---------------------------------------------------------------------------------------------------
+Version: 1.1.3
+Date: 2026-11-12
+  Changes:
+    - Update the turret graphics schema and Lamp technology dependency; preserve unrelated research and recipe state when applying historical unlock migrations.
+    - Add native ownership migration from the original mod identity while preserving existing saved state.
